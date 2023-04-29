@@ -1,0 +1,156 @@
+/* #vsft-wrapper {
+    overflow: hidden;
+    width: 450px;
+    height: 800px;
+} */
+
+.vsft {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    width: 450px;
+    height: 800px;
+    transform: scale(0.9);
+    margin-top: -25px;
+    letter-spacing: 3px;
+}
+
+#vsft-main-wrapper {
+    height: 60%;
+}
+
+#vsft-top-margin-accent {
+    position: absolute;
+    left: 18px;
+    height: 30px;
+    width: 200px;
+    z-index: 999;
+}
+
+#vsft-offer-tag {
+    position: absolute;
+    /* Importante */
+    width: auto;
+    height: auto;
+    min-width: 100px;
+    min-height: 100px;
+    padding: 10px;
+    margin: 25px 15px 0 0;
+    border-radius: 50%;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+#vsft-identity {
+    margin: 0 0 10px 20px;
+}
+
+#vsft-logo-tag {
+    position: absolute;
+    /* Importante */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 325px;
+    left: 25px;
+    z-index: 999;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#vsft-logo-tag img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+
+#vsft-h1 {
+    position: absolute;
+    top: 510px;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 0 1rem;
+    /* Importante */
+    letter-spacing: 2px;
+}
+
+#vsft-photo-wrapper {
+    position: relative;
+    width: auto;
+    height: 450px;
+    overflow: hidden;
+}
+
+#vsft-photo-wrapper img {
+    position: absolute;
+    right: -100px;
+    top: 10px;
+    max-width: none;
+    max-height: none;
+    z-index: 998;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+
+#vsft-right-margin {
+    position: absolute;
+    top: 155px;
+    right: 0;
+    width: 400px;
+    height: 350px;
+    display: flex;
+    align-items: end;
+    /* justify-content: center; */
+    padding-right: 10px;
+    font-size: 2rem;
+}
+
+#vsft-secondary-wrapper {
+    margin-top: 75px;
+    height: 20%;
+}
+
+#vsft-secondary-text {
+    width: 90%;
+    margin: 85px 0 20px 15px;
+    letter-spacing: 2px;
+}
+
+#vsft-cta-container {
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+#vsft-cta {
+    line-height: 1.2rem;
+    height: 60px;
+    position: relative;
+}
+
+#vsft-cta span {
+    top: 17.5px;
+}
+
+#vsft-cta p:first-child {
+    padding: 15px 30px;
+}
+
+#vsft-cta p:first-child span {
+    font-weight: bold;
+}
+
+#vsft-cta p:nth-child(2) {
+    margin-top: -10px;
+}

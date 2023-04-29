@@ -1,16 +1,24 @@
-# CHANGE LOG
+# March 19, 2023
 
-Here we are tracking the previous and upcoming changes (roadmap), pull request this file or open an issue if you have any suggestions for the next version of the boilerplate.
+## Updated `webpack.common.js`:32-36
 
-## Roadmap v2.0
+### Original
 
-- [ ] Update documentation with more examples
+    {
+        test: /\.(png|svg|jpg|gif|jpeg|webp)$/,
+        use: {
+            loader: "file-loader",
+            options: { name: "[name].[ext]" },
+        },
+    }
 
-### August 9th, 2019
-- [x] Removed eralchemy from the Pipfile because its compatibility with Apply and PC computers its not clear. There is now way to create a database diagra.png anymore.
-- [x] Added this changelog file to keep track of changes on the boilerplate.
-- [x] Added documentation for [data validations](https://github.com/4GeeksAcademy/flask-rest-hello/blob/master/docs/DATA_VALIDATIONS.md)
-- [x] Added documentation for [SQL Alchemy operations](https://github.com/4GeeksAcademy/flask-rest-hello/edit/master/docs/MYSQL.md).
+for
 
-### Sep 16th, 2019
-- [x] Added debuging functionality
+    {
+    test: /\.(png|svg|jpg|jpeg|gif)$/i,
+    type: "asset/resource",
+    },
+
+### Source
+
+[webpack-file-loader-does-not-load-background-image](https://stackoverflow.com/questions/68575859/webpack-file-loader-does-not-load-background-image)

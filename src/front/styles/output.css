@@ -1,0 +1,72 @@
+.final-composition-wrapper {
+    background: azure;
+    /* box-shadow: 5px 0px rgba(0, 0, 0, 0.3); */
+    /* margin-top:-50px; */
+}
+
+.final-composition-container {
+    width:25%;
+}
+
+.final-composition-wrapper-img {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    transform: scale(0.85);
+    position: absolute;
+    top:0;
+    opacity: 0;
+}
+
+#finale-composition-graphic {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    margin: 20px 0 0 0;   
+}
+
+.right-output-wrapper {
+    /* border-left: 2px solid black; */
+    box-shadow: -5px 0px rgba(0, 0, 0, 0.3);
+
+}
+
+.btn-output-download {
+    margin-top: -25px;
+    font-weight: 200;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 28px 11px 28px;
+    border-radius: 50px;
+    transition: 1s;
+    color: var(--fucsia);
+    border: 1px solid var(--blue);
+    background: transparent;
+}
+
+.feedback-happy-talk-lead {
+    padding: 1rem 0 0 1rem;
+}
+
+.feedback-happy-talk {
+    padding: 0 0 0 1rem;
+}
+
+.clip-loader {
+    margin: 100% 0;
+}
+
+.download-button {
+    width: 64px;
+    height: 64px;
+    border-radius:5px;
+    border: none;
+    background-color: var(--blue);
+}
+
+.z-index-999 {
+    z-index: 999;
+}

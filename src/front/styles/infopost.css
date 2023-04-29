@@ -1,0 +1,75 @@
+.infopost-main-wrapper {
+    background-image: url("../img/infopost-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 20px 0;
+    position: relative;    
+}
+
+.infopost-wrapper {
+    width:60%;
+    min-width:450px;
+    background: var(--white);
+    border-radius: 10px;
+    height: auto;
+    padding:1.5rem;
+}
+
+.infopost-form {
+    width:100%;
+}
+
+.image-uploader-card {
+    border: none;
+}
+
+.infopost-label {
+    font-weight: 600;
+}
+
+.btn-submit-infopost {
+    display: block;
+    margin: 3rem auto;
+    width:25%;
+    font-weight: 200;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    transition: 1s;
+    color: var(--fucsia);
+    border: 1px solid var(--blue);
+    background: transparent;
+}
+
+.btn-submit-infopost:hover {
+    background: var(--fucsia);
+    color: var(--white);
+}
+
+.form-control-image-uploader {
+    width:90%;
+    padding: 0.5rem 1em 0.5rem 0;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.input-infopost {
+    margin: 5px 0;
+    padding: 5px;
+    width: 90%;
+    font-weight:600;
+}
+
+::-webkit-input-placeholder {
+    color: gray;
+    font-weight: 300;
+}
+
+.slider-tags-infopost {
+    width:90%;
+}
+
+.infopost-img {
+    height:250px;
+    width:auto;
+}

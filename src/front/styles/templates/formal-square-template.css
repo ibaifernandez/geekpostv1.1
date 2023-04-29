@@ -1,0 +1,168 @@
+.CuadradoExterior {
+
+    background-color: rgb(252, 248, 233);
+    z-index: -200;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    /* Importantísimo para que todo permanezca dentro del cuadrado */
+    width: 800px;
+    height: 800px;
+    transform: scale(0.9);
+    margin-top: -25px;
+    letter-spacing: 3px;
+
+
+}
+
+.recorte1 {
+    background-color: white;
+    width: 1080px;
+    height: 1080px;
+    position: absolute;
+    top: 0px;
+    left: 1180px;
+}
+
+.recorte2 {
+    background-color: white;
+    width: 1080px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    left: 100px;
+}
+
+.CuadradoColor2 {
+    width: 500px;
+    height: 500px;
+    /* background-color: bisque; */
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    z-index: 30;
+}
+
+.ImagenCargada {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 250px;
+    left: 200px;
+    z-index: 200;
+    object-fit: cover;
+    object-position: bottom;
+
+}
+
+.CuadroQueContiene {
+    position: relative;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.Cuadricula1 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 240px;
+    left: 140px;
+    z-index: 20000;
+    background-color: blueviolet;
+    opacity: 30%;
+
+}
+
+.Cuadricula2 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 730px;
+    left: 30px;
+    z-index: 20000;
+    /* background-color: blueviolet; */
+    opacity: 30%;
+}
+
+.CuadradoBorde {
+    /* border-color: rgb(13, 13, 37) !important; */
+    border-width: 50px;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 150px;
+    left: 250px;
+    z-index: 20;
+}
+
+.logoPFF {
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    object-fit: cover;
+    z-index: 200000;
+    object-position: center;
+}
+
+.circulo {
+    width: 400px;
+    height: 400px;
+    /* background-color: rgb(143, 160, 43); */
+    position: absolute;
+    overflow: hidden;
+    top: -150px;
+    left: 580px;
+    opacity: 30%;
+}
+
+.TextoPrincipal {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    width: 500px;
+
+}
+
+.TextoPrincipalb {
+    font-family: 'Playfair Display', serif;
+    position: absolute;
+    transform: rotate(270deg);
+    top: 330px;
+    left: -130px;
+    width: 500px;
+    z-index: 60000;
+}
+
+.ContactData {
+    font-family: 'Playfair Display', serif;
+    position: absolute;
+    transform: rotate(270deg);
+    top: 320px;
+    left: 420px;
+    width: 500px;
+    z-index: 60000;
+}
+
+.TextoSecundario {
+    font-family: 'Playfair Display', serif;
+    font-size: x-large;
+    position: absolute;
+    top: 50px;
+    left: 250px;
+    width: 500px;
+}
+
+.oferta {
+    background-color: black;
+    font-size: large;
+    width: 200px;
+    color: white;
+    position: absolute;
+    top: 740px;
+    left: 480px;
+    height: 50px;
+}

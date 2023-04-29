@@ -1,0 +1,139 @@
+.login-bg {
+    background: url("../img/login-bg.jpeg") center no-repeat fixed;
+    background-size: cover;
+    color: var(--purple);
+    height: 100vh;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4),
+        0 0 0 2000px rgba(12, 13, 31, 0.3);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 800px;
+    min-height: 425px;
+    border-radius: 5px;
+}
+
+.login-left-wrapper {
+    padding: 30px 10px ;
+}
+
+.login-right-wrapper {
+    padding: 20px;
+    border-radius: 0 5px 5px 0;
+}
+
+.login-left-wrapper {
+    width: 60%;
+}
+
+.login-form {
+    background: var(--white);
+    text-align: center;
+}
+
+.avatar {
+    background: white;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto 30px;
+    position: relative;
+}
+
+.avatar::after,
+.avatar::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    border-radius: 50%;
+    color: var(--yellow);
+    -webkit-transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+    transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+}
+
+.avatar::after {
+    border: 3px solid;
+    height: 32px;
+    top: 36%;
+    width: 32px;
+}
+
+.avatar::before {
+    border: 3px solid transparent;
+    border-top: 3px solid;
+    border-right: 3px solid;
+    height: 48px;
+    top: 73%;
+    width: 48px;
+}
+
+.registration {
+    margin: 0 0 40px;
+}
+
+.login-link {
+    color: var(--blue);
+}
+
+.login-link:hover {
+    color: var(--purple);
+    transition: all 0.5s ease-in-out;
+}
+
+.label-block {
+    margin: 0 0 2rem 0;
+}
+
+.login-input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    display: block;
+    outline: none;
+    padding: 0;
+    margin: 0 0 0 0.5rem;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+    font-weight:600;
+}
+
+.inputlogin:focus {
+    border-bottom-color: var(--purple);
+}
+
+.login-button {
+    border: none;
+    background: var(--blue);
+    color: var(--white);
+    padding: 12px;
+    width: 100%;
+}
+
+.login-button:hover {
+    background: var(--fucsia);
+    transition: all 0.5s ease-in-out;
+}
+
+.lost-password {
+    margin: 30px 0 0;
+}
+
+.login-warning {
+    background: var(--fucsia);
+    opacity:0.65;
+    font-size:12px;
+    color: var(--white);
+    padding:0.5rem;
+    border-radius: 5px;
+}
+
+::-webkit-input-placeholder {
+    color: gray;
+    font-weight: 300;
+}

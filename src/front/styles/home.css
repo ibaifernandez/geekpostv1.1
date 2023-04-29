@@ -1,7 +1,146 @@
-/*
-    home.css: This website contains selectors only used in home.css
+.home-header {
+    transition: all 0.5s;
+    z-index: 999;
+    zoom: 0.95;
+    background: var(--purple);
+    flex: 0 0 auto;
+}
 
-    All pages share the styles on index.css but you should create 
-    one more css for each page that will contain the selected used 
-    on that page only (the ones not reused in other pages).
-*/
+.home-header .logo {
+    margin: 0;
+}
+
+.home-header a h1 span {
+    font-style: italic;
+    color: var(--white);
+    font-size: 42px;
+    top: 3px;
+    left: 7px;
+}
+
+.home-header a img {
+    max-height: 40px;
+    z-index: 1;
+}
+
+.section-title-home {
+    text-align: center;
+}
+
+.section-title-home h2 {
+    /* font-size: 32px; */
+    /* font-weight: bold; */
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: var(--purple)
+}
+
+.section-title-home h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: var(--white);
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+
+.section-title-home h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: var(--fucsia);
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
+/* Sidebar */
+
+aside {
+    min-height:700px;
+    height:100vh;
+    z-index:997;
+    }
+
+.home-sidebar {
+    background: var(--blue);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding:2rem 0 0 2rem;
+}
+
+.sidebar-username {
+    font-size:24px;
+    margin-top: 15px;
+    margin-left: 10px;
+    color: var(--white)
+}
+
+.sidebar-hr {
+    margin: 2rem 0;
+    background-color: var(--white);
+    border: 0;
+    height:5px !important;
+    opacity: 1;
+}
+
+.sidebar-nav-link {
+    padding:1.35rem 0;
+}
+
+.home-process {
+    padding-top:25px;
+    height:100%;
+    min-height:700px;
+}
+
+.home-process h2 {
+    font-size:24px;
+}
+
+.home-profile {
+    top:0;
+    min-height:700px;
+    height:100px;
+    overflow: scroll;
+}
+
+.btn-create-home {
+    font-weight: 200;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 28px 11px 28px;
+    border-radius: 50px;
+    transition: 1s;
+    margin-top: 3rem;
+    color: var(--fucsia);
+    border: 1px solid var(--blue);
+    background: transparent;
+}
+
+.btn-create-home:hover {
+    background: var(--fucsia);
+    color: var(--white);
+}
+
+/* Media Queries */
+
+@media (max-width: 991px) {
+    aside {
+        display:none
+    }
+
+        .sidebar-username {
+        font-size:16px;
+    }
+
+    .sidebar-nav-link {
+        padding: 0.5rem 0.5rem 0.5rem 0;
+    }
+}
